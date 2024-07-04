@@ -23,11 +23,11 @@ class Line(BaseModel):
     events: List[Optional[None]]
 
 
-@router.post("/line")
+@router.get("/line")
 async def callback():
     return {"message": "Hello LINE!"}
 
-@router.post("/line2")
+@router.get("/line2")
 async def callback():
     return {"message": "Hello LINE2!"}
 
